@@ -1,2 +1,22 @@
-<h1>Pages#landing</h1>
-<p>Find me in app/views/pages/landing.html.erb</p>
+<div class="row">
+  <%= form_tag '#' do %>
+    <div class="span4 text-center">
+      <h2>Step 1</h2>
+      <%= text_field_tag :list_name, nil, placeholder: "Enter a name for your list", class: 'span4' %>
+    </div>
+    <div class="span4 text-center">
+      <h2>Step 2</h2>
+      <%= text_field_tag :owner_email, nil, placeholder: "Enter your email address", class: 'span4' %>
+    </div>
+    <div class="span4 text-center">
+      <h2>Step 3</h2>
+      <%= button_tag "Create List", class: "btn btn-success btn-block" %>
+    </div>
+  <% end %>
+</div>
+<div class="row">
+  <div class="span12 text-center">
+    <h4>You will receive a confirmation email shortly.</h4>
+    <h4>Just ask your members to send an email to yourlistname@listsign.com to sign up.</h4>
+  </div>
+</div>

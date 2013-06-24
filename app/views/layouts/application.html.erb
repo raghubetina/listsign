@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Listsign</title>
+  <title>ListSign</title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
@@ -10,6 +10,10 @@
 </head>
 <body>
   <div class="container">
+    <div class="page-header text-center">
+      <h1>ListSign</h1>
+      <h2 class="muted">E-mail lists. Simplified.</h2>
+    </div>
     <% flash.each do |key, value| %>
       <div class="alert alert-#{key}">
         <button type="button" class="close" data-dismiss="alert">&times;</button>
